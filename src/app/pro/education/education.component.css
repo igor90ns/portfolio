@@ -5,6 +5,14 @@
 
 .box :hover{
     max-width: 200%;
-    /* margin-top: 30vh;  */
+   
     
 }
+
+.dark-modal .modal-content {
+    background-color: #292b2c;
+    color: white;
+  }
+  .dark-modal .close {
+    color: white;
+  }
