@@ -24,42 +24,102 @@
       <div class="row">
         <p>courses</p>
       </div>
-      <div class="row justify-content-center">
-        <div class="box">
-          <button class="btn btn-outline-primary mb-2 mr-2" (click)="openWindowCustomClass(content)">Modal with window custom class</button>
-        </div>
-        <div class="box">
-          <img class="img-fluid" src="../../../assets/images/education/java.jpg">
-        </div>
+      <div class="row justify-content-center ">
+        <div class="col-lg-6 ">
 
-        <div class="box">
-            <img class="img-fluid" src="../../../assets/images/education/angular.jpg">
+          <div class="card box ">
+            <img class="card-img " src="../../../assets/images/education/frontEnd.jpg" alt="Card image" (click)="openWindowCustomClass(fed)">
           </div>
 
-          <div class="box">
-              <img class="img-fluid" src="../../../assets/images/education/sass.jpg">
-            </div>
+
+
+          <div class="card box">
+            <img class="card-img " src="../../../assets/images/education/angular.jpg" alt="Card image" (click)="openWindowCustomClass(angular4)">
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6  ">
+
+          <div class="card box">
+            <img class="card-img " src="../../../assets/images/education/java.jpg" alt="Card image" (click)="openWindowCustomClass(java)">
+          </div>
+
+          <div class="card box">
+            <img class="card-img " src="../../../assets/images/education/sass.jpg" alt="Card image" (click)="openWindowCustomClass(sass)">
+          </div>
+
+        </div>
+
       </div>
-
     </div>
+
   </div>
 
-</div>
+
+  <ng-template #fed let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Front End Development</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img class="img-fluid" src="../../../assets/images/education/frontEnd.jpg">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
 
 
-<ng-template #content let-c="close" let-d="dismiss">
-  <div class="modal-header">
-    <h4 class="modal-title">Modal title</h4>
-    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <img class="img-fluid" src="../../../assets/images/education/frontEnd.jpg">
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
-  </div>
-</ng-template>
+  <ng-template #java let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Java</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img class="img-fluid" src="../../../assets/images/education/java.jpg">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
+
+
+  <ng-template #angular4 let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Angular 4-6</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img class="img-fluid" src="../../../assets/images/education/angular.jpg">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
+
+
+  <ng-template #sass let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Sass & css</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img class="img-fluid" src="../../../assets/images/education/sass.jpg">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
+
 
 

@@ -1,18 +1,13 @@
-.box{
-    max-width: 40%;
-    margin: 10px;
-}
-
-.box :hover{
-    max-width: 200%;
-   
-    
+.box {
+  max-width: 70%;
+  margin: 50px;
 }
 
 .dark-modal .modal-content {
-    background-color: #292b2c;
-    color: white;
-  }
-  .dark-modal .close {
-    color: white;
-  }
+  background-color: #292b2c;
+  color: white;
+}
+
+.dark-modal .close {
+  color: white;
+}
